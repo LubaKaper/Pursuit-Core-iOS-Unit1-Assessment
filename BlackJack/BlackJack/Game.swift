@@ -65,14 +65,19 @@ class Game {
         if player.score == 21 {
             print("BlackJack! You Win!")
             //print("Would you like to play another round?")
-            gameIsOver = true
+            gameIsOver = false
         }
             
         else if player.score > 21 {
             print("Bust! You loose:(")
             //print("Would you like to play another round YES or NO?")
+            gameIsOver = false
+        } else {
             gameIsOver = true
         }
+//        game.stopHits(userAnswer: " ") {
+//            gameIsOver = false
+//        }
         return gameIsOver
     }
     

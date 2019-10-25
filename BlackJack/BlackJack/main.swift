@@ -24,14 +24,13 @@ repeat {
         if userResponse == "hit" {
             game.hitMe(userAnswer: userResponse)
         }
-        // game.gameStatus()
+        
         if userResponse == "pass" {
             game.stopHits(userAnswer: userResponse)
+           game.gameStatus()
         }
         
-       // game.gameStatus()
-        
-     } while game.hasMoreCards && game.gameStatus() == true
+     } while /*game.hasMoreCards && */game.gameStatus() == true
     
     print("Would you like to play anither round? Yes or No")
     let userPlayAgain = readLine() ?? " "
