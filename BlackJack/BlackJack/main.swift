@@ -29,14 +29,14 @@ repeat {
             game.stopHits(userAnswer: userResponse)
         }
         
-        game.gameStatus()
+       // game.gameStatus()
         
      } while game.hasMoreCards && game.gameStatus() == true
     
     print("Would you like to play anither round? Yes or No")
     let userPlayAgain = readLine() ?? " "
     if userPlayAgain == "yes" {
-         game.gameStatus()
+        // game.gameStatus()
         game.reset()
         gameOver = true
     }
